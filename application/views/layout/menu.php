@@ -31,23 +31,23 @@
 					Publikasi
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="<?php base_url('publikasi/buku') ?>">Buku</a>
+					<a class="dropdown-item {publikasibuku}" href="<?php echo base_url('publikasi/buku') ?>">Buku</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/buletin') ?>">Buletin</a> 
+					<a class="dropdown-item {publikasibuletin}" href="<?php echo base_url('publikasi/buletin') ?>">Buletin</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/jurnal') ?>">Jurnal</a> 
+					<a class="dropdown-item {publikasijurnal}" href="<?php echo base_url('publikasi/jurnal') ?>">Jurnal</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/artikel') ?>">Artikel</a> 
+					<a class="dropdown-item {publikasiartikel}" href="<?php echo base_url('publikasi/artikel') ?>">Artikel</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/informasi') ?>">Informasi</a> 
+					<a class="dropdown-item {publikasiinformasi}" href="<?php echo base_url('publikasi/informasi') ?>">Informasi</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/kegiatan') ?>">Kegiatan</a> 
+					<a class="dropdown-item {publikasikegiatan}" href="<?php echo base_url('publikasi/kegiatan') ?>">Kegiatan</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/gallery') ?>">Gallery Foto</a> 
+					<a class="dropdown-item {publikasigallery}" href="<?php echo base_url('publikasi/gallery') ?>">Gallery Foto</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/video') ?>">Video</a> 
+					<a class="dropdown-item {publikasivideo}" href="<?php echo base_url('publikasi/video') ?>">Video</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="<?php base_url('publikasi/laporan') ?>">Laporan</a> 
+					<a class="dropdown-item {publikasilaporan}" href="<?php echo base_url('publikasi/laporan') ?>">Laporan</a> 
 				</div>
 			</li>
 			<li class="nav-item {menuperaturan} dropdown">
@@ -55,19 +55,23 @@
 					Peraturan
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="peraturan-uu.html">Undang Undang Terkait</a>
+					<a class="dropdown-item {uuterkait}" href="<?php echo base_url('peraturan/uuterkait') ?>">Undang Undang Terkait</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="peraturan-pemerintah.html">Peraturan Pemerintah</a> 
+					<a class="dropdown-item {pemerintah}" href="<?php echo base_url('peraturan/pemerintah') ?>">Peraturan Pemerintah</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item " href="peraturan-presiden.html">Peraturan Presiden</a> 
+					<a class="dropdown-item {presiden} " href="<?php echo base_url('peraturan/presiden') ?>">Peraturan Presiden</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item " href="peraturan-perma.html">Perma</a> 
+					<a class="dropdown-item {perma}" href="<?php echo base_url('peraturan/perma') ?>">Perma</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="peraturan-lpsk.html">Peraturan LPSK</a> 
+					<a class="dropdown-item {lain}" href="<?php echo base_url('peraturan/lain') ?>">Peraturan Lain</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item " href="peraturan-peraturanlain.html">Peraturan Lain</a> 
+					<a class="dropdown-item {lpsk}" href="<?php echo base_url('peraturan/lpsk') ?>">Peraturan LPSK</a> 
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="peraturan-kodeetik.html">Kode Etik</a> 
+					<a class="dropdown-item {ketualpsk}" href="<?php echo base_url('peraturan/ketualpsk') ?>">Peraturan dan Keputusan Ketua LPSK</a> 
+					<div class="dropdown-divider "></div>
+					<a class="dropdown-item {sekjenlpsk}" href="<?php echo base_url('peraturan/sekjenlpsk') ?>">Peraturan dan Keputusan Sekjen LPSK</a> 
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item {kodeetik}" href="<?php echo base_url('peraturan/kodeetik') ?>">Kode Etik</a> 
 				</div>
 			</li>
 			<li class="nav-item {menuberita} dropdown">
@@ -75,9 +79,9 @@
 					Berita
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="berita-pers-release.html">Pers Release</a>
+					<a class="dropdown-item {persrelease}" href="<?php echo base_url('berita/persrelease') ?>">Pers Release</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="berita-wartahukum.html">Warta Hukum</a> 
+					<a class="dropdown-item {wartahukum}" href="<?php echo base_url('berita/wartahukum') ?>">Warta Hukum</a> 
 				</div>
 			</li>
 			<li class="nav-item {menuinfopublik} dropdown">

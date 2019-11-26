@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="<?= base_url('assets/resources/css/style-publikasi.css') ?>" type="text/css">
 		<link rel="stylesheet" href="<?= base_url('assets/vendors/css/sal.css') ?>">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+		<link rel="stylesheet" href="<?= base_url('assets/vendors/lightgallery/css/lightgallery.css') ?>" type="text/css">
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500i,700|Raleway:400,500,500i,600,700,800|Viga&display=swap" rel="stylesheet">
@@ -78,15 +79,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		
-		<!-- Custom Javascript -->
-		<script src="<?= base_url('assets/resources/js/script.js') ?>"></script>
-		<script src="<?= base_url('assets/resources/js/chart.js') ?>"></script>
-		<script src="<?= base_url('assets/vendors/js/sal.js') ?>"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
-		<script>
-			sal();
-		</script>
+	<!-- Custom Javascript -->
+	<script src="<?= base_url('assets/resources/js/script.js') ?>"></script>
+	<script src="<?= base_url('assets/resources/js/chart.js') ?>"></script>
+	<script src="<?= base_url('assets/vendors/js/sal.js') ?>"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+	<script src="<?= base_url('assets/vendors/lightgallery/js/lightgallery.js') ?>"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+	<script>
+		sal();
+	</script>
+	<!-- Script for LighGallery JS -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#column").lightGallery({
+				mousewheel: true,
+				thumbnail:true
+			});
+		});
+	</script>
 
 	</body>
 </html>

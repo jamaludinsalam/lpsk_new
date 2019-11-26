@@ -71,6 +71,26 @@ class Template
 		$this->_ci->parser->parse('layout/konten_template', $data);
 		
 	}
+	function contentperaturan($content=null, $data=null)
+	{
+		$data['title'] = $this->_title;
+		$data['menu'] = $this->_ci->parser->parse('layout/menu', $data, true);
+		$data['sidebar'] = $this->_ci->parser->parse('layout/menu_konten', $data, true);
+		$data['_content'] = $this->_ci->parser->parse('web/'.$content, $data, true);
+		$data['footer'] = $this->_ci->parser->parse('layout/footer', $data, true);
+		$this->_ci->parser->parse('layout/konten_template_peraturan', $data);
+		
+	}
+	function contentberita($content=null, $data=null)
+	{
+		$data['title'] = $this->_title;
+		$data['menu'] = $this->_ci->parser->parse('layout/menu', $data, true);
+		$data['sidebar'] = $this->_ci->parser->parse('layout/menu_konten', $data, true);
+		$data['_content'] = $this->_ci->parser->parse('web/'.$content, $data, true);
+		$data['footer'] = $this->_ci->parser->parse('layout/footer', $data, true);
+		$this->_ci->parser->parse('layout/konten_template_berita', $data);
+		
+	}
 	
 	function content_blank($content=null, $data=null)
 	{

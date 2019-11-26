@@ -5,7 +5,8 @@ class Publikasi_model extends CI_Model
 {
 	public function __construct()
     {
-        parent::__construct();
+		parent::__construct();
+		$this->load->helper('text');
 		$this->load->database();
 		//$this->db2 = $this->load->database('websitemk',true);
     }

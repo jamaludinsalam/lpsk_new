@@ -11,7 +11,8 @@ class Publikasi_controller extends CI_Controller {
 	
 	public function __construct()
     {
-        parent::__construct();
+		parent::__construct();
+		$this->load->helper('url');
 		$this->load->model('Publikasi_model');
 		$this->load->model('pagination_model');
 		$this->load->library('pagination');
@@ -44,7 +45,8 @@ class Publikasi_controller extends CI_Controller {
 		if ($this->input->get('page') != null) {
 			$page = $this->input->get('page');
 		}
-		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuku'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -63,7 +65,9 @@ class Publikasi_controller extends CI_Controller {
 		$this->template->set_title('Buku');
 	
 		$url = base_url("publikasi/detailbuku");
-		
+
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuku'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -96,6 +100,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuletin'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -115,6 +121,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailbuletin");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuletin'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -147,6 +155,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasijurnal'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -166,6 +176,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailjurnal");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasijurnal'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -198,6 +210,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiartikel'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -217,6 +231,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailartikel");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiartikel'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -249,6 +265,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiinformasi'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -268,6 +286,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailinformasi");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiinformasi'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -300,6 +320,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasikegiatan'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -319,6 +341,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailkegiatan");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasikegiatan'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -351,6 +375,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasigallery'] = 'active';
 		$this->data['gallery'] = 'gallery';
@@ -387,6 +413,8 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasivideo'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -406,6 +434,8 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailvideo");
 		
+		$this->data['menuberita'] = '';
+		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasivideo'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>

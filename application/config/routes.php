@@ -57,3 +57,7 @@ $route['delete/:id']['delete'] = "admin/admin_news/delete/:id";
 
 $route['publikasi'] = 'web/publikasi_controller';
 $route['publikasi/([a-z_]+)|publikasi/([a-z_]+)/([a-zA-Z0-9_]+)|publikasi/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/publikasi_controller/$1';
+$route['peraturan'] = 'web/peraturan_controller';
+$route['peraturan/([a-z_]+)|peraturan/([a-z_]+)/([a-zA-Z0-9_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/peraturan_controller/$1';
+$route['berita'] = 'web/berita_controller';
+$route['berita/([a-z_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/berita_controller/$1';
