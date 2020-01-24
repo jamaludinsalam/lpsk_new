@@ -37,7 +37,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/buku");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,7);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -45,8 +45,12 @@ class Publikasi_controller extends CI_Controller {
 		if ($this->input->get('page') != null) {
 			$page = $this->input->get('page');
 		}
-		$this->data['menuberita'] = '';
+		
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuku'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -66,8 +70,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailbuku");
 
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuku'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -91,7 +98,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/buletin");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,8);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -100,8 +107,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuletin'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -121,8 +131,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailbuletin");
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasibuletin'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -146,7 +159,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/jurnal");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,9);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -155,8 +168,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasijurnal'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -176,8 +192,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailjurnal");
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasijurnal'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -201,7 +220,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/artikel");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,10);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -210,8 +229,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiartikel'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -231,8 +253,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailartikel");
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiartikel'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -256,7 +281,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/informasi");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,3);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -265,8 +290,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiinformasi'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -286,8 +314,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailinformasi");
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasiinformasi'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -311,7 +342,7 @@ class Publikasi_controller extends CI_Controller {
 		
 		$url = base_url("publikasi/kegiatan");
 		$total_rows = $this->Publikasi_model->getCountDataPublikasi($cari,12);
-		$config = $this->pagination_model->initPagination($url, $total_rows);
+		$config = $this->pagination_model->initPagination3($url, $total_rows);
 		
 		$this->pagination->initialize($config);
 		
@@ -320,8 +351,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasikegiatan'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -341,8 +375,11 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailkegiatan");
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasikegiatan'] = 'active';
 		$this->data['navigation'] = '<li class="breadcrumb-item"><a href="#"><img src="'.base_url('assets/resources/css/img/home.svg').'" alt=""></a></li>
@@ -375,8 +412,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasigallery'] = 'active';
 		$this->data['gallery'] = 'gallery';
@@ -413,8 +453,11 @@ class Publikasi_controller extends CI_Controller {
 			$page = $this->input->get('page');
 		}
 		
-		$this->data['menuberita'] = '';
 		$this->data['menuperaturan'] = '';
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
+		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasivideo'] = 'active';
 		$this->data["links"] = $this->pagination->create_links();
@@ -434,7 +477,10 @@ class Publikasi_controller extends CI_Controller {
 	
 		$url = base_url("publikasi/detailvideo");
 		
+		$this->data['menukontakkami'] = '';
+		$this->data['menukerjasama'] = '';
 		$this->data['menuberita'] = '';
+		$this->data['menuinformasi'] = '';
 		$this->data['menuperaturan'] = '';
 		$this->data['menupublikasi'] = 'active';
 		$this->data['publikasivideo'] = 'active';

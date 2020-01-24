@@ -1,7 +1,7 @@
 <?php
 
 if($menupublikasi=='active'){
-	echo '<div class="col-sm-4">
+	echo '<div class="col-md-4">
 		<div class="search-container">
 			<form action="#">
 				<input type="text" placeholder="Search.." name="search">
@@ -62,23 +62,34 @@ if($menuperaturan=='active'){
 
 
 if($menuberita=='active'){
-	echo '<div class="col-4">
+	echo '<div class="col-md-4">
+			
 				<div class="search-container">
 					<form action="#">
 						<input type="text" placeholder="Search.." name="search">
 						<button type="submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
+			
+
+				
 				<div class="categories"><h4 >Categories</h4></div>
 				<div class="list-group list-group-flush">
+					<a href="'.base_url('berita/berita').'" class="list-group-item list-group-item-action {berita}">
+					Berita 
+					</a>
 					<a href="'.base_url('berita/persrelease').'" class="list-group-item list-group-item-action {persrelease}">
-					Pers Release 
+						Pers Release
 					</a>
 					<a href="'.base_url('berita/wartahukum').'" class="list-group-item list-group-item-action {wartahukum}">
 						Warta Hukum
 					</a>
 				</div>
 			</div>';
+}
+
+if($menuinformasi=='active'){
+	echo '';
 }
 
 	

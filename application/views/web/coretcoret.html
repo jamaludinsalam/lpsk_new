@@ -1,0 +1,286 @@
+	<section id="features" class="features">
+			<div class="container ">
+				<div class="row center" >
+					<div class="col-lg box" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+						<img src="'.base_url('assets/resources/css/img/ft1.png').'" alt="">
+						<div class="feature-title ">
+							<h1><strong>Subjek Perlindungan</strong> </h1>
+						</div>
+						<div class="feature-content">
+                            <p>
+                                <li>Pelapor </li>
+                                <li>Saksi </li>
+                                <li>Korban Ahli </li>
+                                <li>Saksi Pelaku </li>
+                                <li>Saksi Pelaku  Kerjasama</li>
+                            </p>
+						</div>
+						
+						<a href="" class="btn btn-primary"> <strong> Info Lengkap</strong></a>
+					</div>
+					<div class="col-lg box" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+						<img src="'.base_url('assets/resources/css/img/ft2.png').'" alt="">
+						<div class="feature-title ">
+							<h1><strong>Kasus Prioritas</strong> </h1>
+						</div>
+						<div class="feature-content">
+							<p>Pelanggaran HAM yang berat, Korupsi, Pencucian Uang, Terorisme, Perdagangan Orang, Narkoba, Kekerasan Seksual pada Anak, Penyiksaan, Penganiayaan yang berat, Tindak Pidana lain</p>
+						</div>
+						
+						<a href="" class="btn btn-primary"><strong> Info Lengkap</strong></a>
+					</div>
+					<div class="col-lg box" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+						<img src="'.base_url('assets/resources/css/img/ft3.png').'" alt="">
+						<div class="feature-title ">
+							<h1><strong>Program Perlindungan</strong> </h1>
+						</div>
+						<div class="feature-content">
+							<p>Perlindungan Fisik, Perlindungan Prosedural, Perlindungan Hukum, Bantuan, Ganti Rugi, Saksi Pelaku Kerjasama</p>
+						</div>
+						
+						<a href="" class="btn btn-primary"><strong> Info Lengkap</strong></a>
+					</div>
+					<div class="col-md box" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+						<img src="'.base_url('assets/resources/css/img/ft4.png').'" alt="">
+						<div class="feature-title ">
+							<h1><strong>Cara Mengajukan Permohonan</strong> </h1>
+						</div>
+						
+						<a href="" class="btn btn-primary"><strong> Info Lengkap</strong></a>
+					</div>
+				</div>
+			</div>
+        </section>
+        
+
+
+
+
+		<section id="features4">
+			<div class="container">
+				<div class="row">
+					<div class="search__container">
+						<p class="search__title">
+							                                     
+						</p>
+						<input class="search__input" type="text" placeholder="Masukan Kata Pencarian">
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+
+
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veritatis magnam nam cum similique qui mollitia sequi dolores ipsa voluptatem quibusdam, beatae vel iure modi, consectetur odit ut magni! Eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas laboriosam culpa ratione dicta! A aliquam nobis aperiam, provident quis, harum voluptatum repellendus distinctio dolor quidem nostrum debitis beatae incidunt accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat maiores velit ipsam hic quidem nam molestias pariatur qui mollitia. Iusto a esse dolores fugit maxime, et delectus voluptatum quibusdam.
+
+
+
+
+
+		$hasil='';
+		foreach ($data as $i) {
+			$hasil.='
+						<div class="col-md-8">
+							<h1 class="mb-5 ">'.$i->page_title.' </h1>
+							<p>'.$i->page_content.'</p>
+						</div>
+					
+					';
+			
+		}
+
+
+
+		<section class="visi" id="visi">
+			<div class="container">
+				<div class="row justify-content-md-center " >
+					<div class="col-md-8">
+						<form>
+							<div class="form-group">
+							  <label for="namalengkap">Nama Lengkap</label>
+							  <input type="text" class="form-control" id="namalengkap" placeholder="Isi nama lengkap anda ...">
+							</div>
+							<div class="form-group">
+							  <label for="noidentitas">No Identitas</label>
+							  <input type="text" class="form-control" id="noidentitas" placeholder="Nomor KTP / SIM / Paspor Pelapor">
+							</div>
+							<div class="form-group">
+							  <label for="jeniskelamin">Jenis Kelamin</label>
+							  <select class="form-control" id="jeniskelamin">
+								<option disabled>Please select</option>
+								<option>Laki - Laki</option>
+								<option>Perempuan</option>
+							  </select>
+							</div>
+							<div class="form-group">
+								<label for="email">Alamat Email </label>
+								<input type="email" class="form-control" id="email" placeholder="Alamat E-mail Aktif">
+							</div>
+							<div class="form-group">
+								<label for="notelp">No Telp </label>
+								<input type="text" class="form-control" id="notelp" placeholder="Nomor Telepon Rumah / Kantor Pelapor">
+							</div>
+							<div class="form-group">
+								<label for="nohp">No HP </label>
+								<input type="text" class="form-control" id="nohp" placeholder="Nomor HP Pelapor yang dapat dihubungi">
+							</div>
+							
+							<div class="form-group">
+							  <label for="alamat">Alamat Lengkap Domisili</label>
+							  <textarea class="form-control" id="alamat" rows="3"></textarea>
+							</div>
+						  </form>
+						  <button type="submit" class="btn btn-primary">Adukan</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+        <section>
+            <div class="container features2">
+                <div class="row ">
+                    <h1>lalalalalal lalalalal</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container" style="width: 100%;">
+                <div class="row">
+                    <h1>lalalalalal lalalalal</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="features3">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="col-lg">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="col-lg">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="col-lg">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="col-lg">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="features3">
+            <div class="container">
+                <div class="row center">
+                    <div id="image-box-cover-all">
+                        <div class="col-lg box " id="image-box-all">
+                            
+                            <i class="fas fa-user-friends " style="font-size: 3em; color: #fff"></i>
+                            
+                            <a href="#" style="text-decoration: none;">
+                                <h6 class="mt-2" style="color: #fff">Subjek Perlindungan</h6>
+                            </a>
+                            
+                        </div>
+                
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Features  V2 -->	
+
+
+<section id="features3">
+	<div class="container">
+		<div class="row center">
+			
+				<div class="col-sm box ">
+					
+					<i class="fas fa-user-friends " style="font-size: 3em; color: #fff"></i>
+					
+					<a href="#" style="text-decoration: none;">
+						<h6 class="mt-2" style="color: #fff">Subjek Perlindungan</h6>
+					</a>
+					
+				</div>
+				<div class="col-sm box ">
+					
+					<i class="fas fa-user-friends " style="font-size: 3em; color: #fff"></i>
+					
+					<a href="#" style="text-decoration: none;">
+						<h6 class="mt-2" style="color: #fff">Subjek Perlindungan</h6>
+					</a>
+					
+				</div>
+				<div class="col-sm box ">
+					
+					<i class="fas fa-user-friends " style="font-size: 3em; color: #fff"></i>
+					
+					<a href="#" style="text-decoration: none;">
+						<h6 class="mt-2" style="color: #fff">Subjek Perlindungan</h6>
+					</a>
+					
+				</div>
+				<div class="col-sm box ">
+					
+					<i class="fas fa-user-friends " style="font-size: 3em; color: #fff"></i>
+					
+					<a href="#" style="text-decoration: none;">
+						<h6 class="mt-2" style="color: #fff">Subjek Perlindungan</h6>
+					</a>
+					
+				</div>
+		
+			
+		
+		</div>
+	</div>
+</section>

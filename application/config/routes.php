@@ -55,9 +55,26 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin/admin_news/pers_release/(:num)'] = 'pers_release';
 $route['delete/:id']['delete'] = "admin/admin_news/delete/:id";
 
+$route['home'] = 'web/home_controller';
+$route['home/([a-z_]+)|home/([a-z_]+)/([a-zA-Z0-9_]+)|home/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/home_controller/$1';
+
 $route['publikasi'] = 'web/publikasi_controller';
 $route['publikasi/([a-z_]+)|publikasi/([a-z_]+)/([a-zA-Z0-9_]+)|publikasi/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/publikasi_controller/$1';
 $route['peraturan'] = 'web/peraturan_controller';
 $route['peraturan/([a-z_]+)|peraturan/([a-z_]+)/([a-zA-Z0-9_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/peraturan_controller/$1';
 $route['berita'] = 'web/berita_controller';
 $route['berita/([a-z_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)|berita/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/berita_controller/$1';
+$route['informasi'] = 'web/informasi_controller';
+$route['informasi/([a-z_]+)|informasi/([a-z_]+)/([a-zA-Z0-9_]+)|informasi/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/informasi_controller/$1';
+$route['kerjasama'] = 'web/kerjasama_controller';
+$route['kerjasama/([a-z_]+)|kerjasama/([a-z_]+)/([a-zA-Z0-9_]+)|kerjasama/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/kerjasama_controller/$1';
+$route['kontakkami'] = 'web/kontakkami_controller';
+$route['kontakkami/([a-z_]+)|kontakkami/([a-z_]+)/([a-zA-Z0-9_]+)|kontakkami/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/kontakkami_controller/$1';
+$route['profil'] = 'web/profil_controller';
+$route['profil/([a-z_]+)|profil/([a-z_]+)/([a-zA-Z0-9_]+)|profil/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'web/profil_controller/$1';
+
+
+//Admin
+$route['logout'] = 'admin/admin_controller/logout';
+$route['admin'] = 'admin/admin_controller';
+$route['admin/([a-z_]+)|admin/([a-z_]+)/([a-zA-Z0-9_]+)|admin/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)|admin/([a-z_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)/([a-zA-Z0-9_]+)'] = 'admin/admin_controller/$1';

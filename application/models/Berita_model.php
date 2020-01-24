@@ -40,8 +40,8 @@ class Berita_model extends CI_Model
 	function getDataBeritaLimiter($limit,$offset,$cari,$jenis)
 	{
 		
-		$this->db->select('*');
-		// $this->db->select('LEFT("*", 10)', false);
+		// $this->db->select('*');
+		$this->db->select('LEFT("news_content ", 10)', false);
 		$this->db->select("DATE_FORMAT(news_created_date, '%d %M %Y')as tgl", false);
 		
 		$this->db->where('news_active', 1);
@@ -50,13 +50,15 @@ class Berita_model extends CI_Model
 		
 		
 		$this->db->from('news');
-		$this->db->where('LEFT("news_content", 10)', false);
-		$this->db->order_by('news_created_date','desc');
+		// $this->db->where('LEFT("news_content", 10)', false);
+		// $this->db->order_by('news_created_date','desc');
 
-		$this->db->limit($limit, $offset);
+		// $this->db->limit($limit, $offset);
 		$query = $this->db->get()->result();
-		// $content = $this->db->select(LEFT($query, 10))
-		return $query;
+		$content = $this->db->select(LEFT($query, 10));
+		// return $content;
+		print_r($content);
+		die();
 		// if ($query->num_rows() > 0) {
 		// 	foreach ($query->result() as $row) {
 		// 		$datalimit[] = $row->news_content;
@@ -102,5 +104,54 @@ class Berita_model extends CI_Model
 		return false;
 	}
 	
+
+	function getRelatedBerita(){
+		$jenis=4;
+		$this->db->select('*');
+		$this->db->where('news_type_id', $jenis);
+		$this->db->order_by('news_created_date','desc');
+		$this->db->from('news');
+		$this->db->limit(3);
+
+		$query = $this->db->get();
+		foreach ($query->result() as $row)
+			{
+				$data[]= $row;
+			}
+			return $data;
+	}
+
+	function getRelatedPersRelease(){
+		$jenis=5;
+		$this->db->select('*');
+		$this->db->where('news_type_id', $jenis);
+		$this->db->order_by('news_created_date','desc');
+		$this->db->from('news');
+		$this->db->limit(3);
+
+		$query = $this->db->get();
+		foreach ($query->result() as $row)
+			{
+				$data[]= $row;
+			}
+			return $data;
+	}
+
+
+	function getRelatedWartaHukum(){
+		$jenis=6;
+		$this->db->select('*');
+		$this->db->where('news_type_id', $jenis);
+		$this->db->order_by('news_created_date','desc');
+		$this->db->from('news');
+		$this->db->limit(3);
+
+		$query = $this->db->get();
+		foreach ($query->result() as $row)
+			{
+				$data[]= $row;
+			}
+			return $data;
+	}
 	
 }

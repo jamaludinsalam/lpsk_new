@@ -6,12 +6,12 @@
 		foreach ($data as $sip) {
 			
 			$hasil.='<div class="row bukurow mt-5">
-					<div class="col-sm-4">
+					<div class="col-md-4">
 						<div class="image-box-all" id="image-box-all">
 							<img src="'.base_url('assets/uploads/images/publikasi/'.($sip->news_media==""?"default.jpg":$sip->news_media)).'" alt="" class="image-box-cover-all">
 						</div>
 					</div>
-					<div class="col-sm-8 mt-2 bukukanan">
+					<div class="col-md-8 mt-2 bukukanan">
 						<h2>'.$sip->tgl.'</h2>
 						<strong><h1>'.$sip->news_title.'</h1></strong>
 						<h3>Ditulis Oleh : '.$sip->written_by.' </h3>
@@ -27,4 +27,3 @@
 	}
 ?>
 
-{links}

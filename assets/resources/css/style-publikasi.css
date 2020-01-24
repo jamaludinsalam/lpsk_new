@@ -42,8 +42,23 @@ html {
  
 
 /* ======================================================= end MOBILE Version =========================================================== */
+.red {
+  padding-top: 20px;
+  background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+  background-image: linear-gradient(-45deg, rgb(236, 82, 82) 0%, rgb(110, 26, 82) 100%);
+}
+.red2 {
+  background: #000F31;
+}
 
+.red2 .right {
+  float: right;
+}
 
+.white {
+  padding-top: 50px;
+  background-color: white;
+}
 /* ================================================================================== */
 /* ================================== HEADER ======================================== */
 /* ================================================================================== */
@@ -224,11 +239,12 @@ padding-bottom: .6rem;
 }
 .title .jumbotron {
     height: 60%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/bg-title2.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/justice4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
     background-attachment: fixed;
+    margin-bottom: 0;
 }
 
 #title {
@@ -410,15 +426,14 @@ padding-bottom: .6rem;
   .buku p {
     font-size: .8em;
   }
-  .bukukanan {
-    /* margin-left: 5%; */
+  /* .bukukanan {
     text-align: center;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .bukukanan {
-    text-align: left;
-  }
+  /* .bukukanan {
+    text-align: center;
+  } */
 }
 
 /* ====================================== End Buku ============================== */
@@ -489,15 +504,14 @@ padding-bottom: .6rem;
   .buletin p {
     font-size: .8em;
   }
-  .buletinkanan {
-    /* margin-left: 5%; */
+  /* .buletinkanan {
     text-align: center;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .buletinkanan {
+  /* .buletinkanan {
     text-align: left;
-  }
+  } */
 }
 
 /* ====================================== End Buletin ============================== */
@@ -568,15 +582,14 @@ padding-bottom: .6rem;
   .jurnal p {
     font-size: .8em;
   }
-  .jurnalkanan {
-    /* margin-left: 5%; */
+  /* .jurnalkanan {
     text-align: center;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .jurnalkanan {
+  /* .jurnalkanan {
     text-align: left;
-  }
+  } */
 }
 
 /* ====================================== End jurnal ============================== */
@@ -648,17 +661,16 @@ padding-bottom: .6rem;
     font-size: .8em;
   }
   .informasikanan {
-    /* margin-left: 5%; */
     text-align: center;
   }
-  .image-box-cover-all{
+  /* .image-box-cover-all{
     height: 350px;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .informasikanan {
+  /* .informasikanan {
     text-align: left;
-  }
+  } */
 }
 
 /* ====================================== End informasi ============================== */
@@ -729,15 +741,14 @@ padding-bottom: .6rem;
   .artikel p {
     font-size: .8em;
   }
-  .artikelkanan {
-    /* margin-left: 5%; */
+  /* .artikelkanan {
     text-align: center;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .artikelkanan {
+  /* .artikelkanan {
     text-align: left;
-  }
+  } */
 }
 
 /* ====================================== End artikel ============================== */
@@ -746,9 +757,10 @@ padding-bottom: .6rem;
  
   #image-box-all{
     display: inline-block;
-  margin: .4vw;
-  overflow: hidden; 
-  border-radius: 10px ;
+    margin: .4vw;
+    overflow: hidden; 
+    border-radius: 10px ;
+    min-width: 100%;
   }
 #image-box-all img{
   display: block;
@@ -835,15 +847,14 @@ padding-bottom: .6rem;
   .kegiatan p {
     font-size: .8em;
   }
-  .kegiatankanan {
-    /* margin-left: 5%; */
+  /* .kegiatankanan {
     text-align: center;
-  }
+  } */
 }
 @media(min-width: 576px){
-  .kegiatankanan {
+  /* .kegiatankanan {
     text-align: left;
-  }
+  } */
 }
 @media(min-width: 768px){
   .kegiatan p {
@@ -1202,8 +1213,19 @@ footer .right {
 }
 
 /* ================================== END FOOTER ================================== */
+.pagination {
+  margin-top: 15%;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color:#1E2A54;
+  border-color:  #1E2A54;
+}
 
-
+.page-item a {
+  color: rgb(105, 104, 104);
+}
 
 /* ==================================================================================== */
 /* ================================== END SECTIONS ==================================== */

@@ -38,7 +38,23 @@ object-fit: cover;
 height: 250px;
 width: 100%;
 }
+.red {
+  padding-top: 20px;
+  background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+  background-image: linear-gradient(-45deg, rgb(236, 82, 82) 0%, rgb(110, 26, 82) 100%);
+}
+.red2 {
+  background: #000F31;
+}
 
+.red2 .right {
+  float: right;
+}
+
+.white {
+  padding-top: 50px;
+  background-color: white;
+}
 
 /*  ========================================================= MOBILE Version ========================================================= */
 @media (min-width: 300px){
@@ -238,11 +254,12 @@ padding-bottom: .6rem;
 }
 .title .jumbotron {
     height: 60%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/bg-title2.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./../css/img/justice1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
     background-attachment: fixed;
+    margin-bottom: 0;
 }
 
 #title {
@@ -535,7 +552,134 @@ padding-bottom: .6rem;
 }
 /* ================================== end Sejarah LPSK  ====================================== */
 
+/* ================================== lhkpn  ====================================== */
+
+.peraturan {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.peraturan .img-struktur img{
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+.peraturan .img-struktur {
+  text-align: center;
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+}
+.peraturan h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+  /* padding-top: 5%; */
+}
+.peraturanrow h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #535353;
+}
+.peraturan h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.peraturan th {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.peraturan td{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: .85em;
+}
+.peraturan h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #555;
+  /* padding-top: 5%; */
+}
+.peraturan p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.peraturan a{
+  text-decoration: none;
+}
+.peraturan hr .peraturanhr {
+  border: 2px solid #555;
+  width: 50%;
+}
+.peraturan .btn-custom {
+  margin-top: 3%;
+  background-color: #12295C;
+  border-color:  #12295C;
+}
+
+@media(min-width: 300px){
+  .peraturan h1 {
+    font-size: 1.1em;
+  }
+  .peraturan h2 {
+    font-size: .8em;
+  }
+  .peraturan h3 {
+    font-size: .8em;
+  }
+  .peraturan p {
+    font-size: .8em;
+  }
+  .peraturankanan {
+    /* margin-left: 5%; */
+    text-align: center;
+  }
+  .rowmd {
+    padding-top: 10%;
+  }
+}
+@media(min-width: 576px){
+  .peraturankanan {
+    text-align: left;
+  }
+}
+@media(min-width: 768px){
+  .peraturan p {
+      font-size: 1em;
+      line-height: 1.8em;
+  }
+  .peraturan h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+@media(min-width:992px){
+  .peraturanrow{
+    margin-left: 10%;;
+  }
+  .rowmd {
+    padding-top: 0;
+  }
+}
+
+/* ============================ end lhkpn ======================================== */
+
+
+
 /* ============================ Visi dan Misi ======================================== */
+
 .visirow {
   padding-top: 5%;
   padding-bottom: 10%;
@@ -568,7 +712,9 @@ padding-bottom: .6rem;
   margin-left: 5%;
 }
 
-
+.visi .col-8 {
+  max-width: 100%;
+}
 
 .visi .how-bor2,
 .visi .how-bor1 {
@@ -1042,7 +1188,19 @@ footer .right {
 
 /* ================================== END FOOTER ================================== */
 
+.pagination {
+  margin-top: 15%;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color:#1E2A54;
+  border-color:  #1E2A54;
+}
 
+.page-item a {
+  color: rgb(105, 104, 104);
+}
 
 /* ==================================================================================== */
 /* ================================== END SECTIONS ==================================== */

@@ -8,7 +8,7 @@
 			$hasil.='<div class="row bukurow mt-5">
 					<div class="col-sm-4">
 						<div class="image-box-all" id="image-box-all">
-							<img src="'.base_url('assets/uploads/images/publikasi/'.($sip->news_media==""?"default.jpg":$sip->news_media)).'" alt="" class="image-box-cover-all">
+							<img src="'.base_url('assets/uploads/images/publikasi/thumb/'.($sip->news_media==""?"default.jpg":$sip->news_media)).'" alt="" class="image-box-cover-all">
 						</div>
 					</div>
 					<div class="col-sm-8 mt-2 bukukanan">
@@ -27,4 +27,3 @@
 	}
 ?>
 
-{links}
